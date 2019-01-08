@@ -17,9 +17,10 @@ var arr = [10,20,30];
   Return the first item in the given array.
 */
 
-//Code Here
-
-
+function first(arr){
+  return arr[0]
+   }
+first(arr)
 
 ////////// PROBLEM 2 //////////
 
@@ -32,8 +33,11 @@ var arr = [40,50,60];
   Return the last item in the given array.
 */
 
-//Code Here
+function last(arr){
+  return arr[2]
+}
 
+last(arr)
 
 
 ////////// PROBLEM 3 //////////
@@ -47,7 +51,13 @@ var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
   Loop through the given array and alert every item in the array.
 */
 
-//Code Here
+function looper(family){
+  for (var i = 0; i < family.length; i++){
+    alert(family[i])
+  }
+  console.log(family)
+}
+looper(family)
 
 
 
@@ -62,8 +72,13 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
   Loop through the given array backwards alerting every item in the array starting at the end.\
 */
 
-//Code Here
-
+function reversedLooper(letters){
+  for (var i = letters.length - 1; i >=0; i-- ){
+    alert(letters[i])
+  }
+    console.log(letters)
+}
+reversedLooper(letters)
 
 
 ////////// PROBLEM 5 //////////
@@ -77,13 +92,17 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
   Return an array that contains the even numbers from the nums array.
 */
 
-//Code Here
+function evenFinder(nums){
+  var evens = [];
+    for (var i = 0; i < nums.length; i++){
+      if (nums[i] % 2 === 0){
+        evens.push(nums[i])
+      }
+    
+    }
+    return evens
 
-
-
-
-
-
+}
 
 /////////////////////// EXTRA PRACTICE PROBLEMS BELOW ////////////////////
 ////////// MOVE ONTO NEXT SECTION BEFORE WORKING ON THESE ////////////////
